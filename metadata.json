@@ -1,5 +1,5 @@
 {
-  "name": "CloudOps: AWS Spot & On-Demand Monitor",
-  "description": "A comprehensive multi-account dashboard for monitoring EC2 Spot and On-Demand instance distribution across Auto Scaling Groups, featuring historical trends and AI-driven cost recommendations.",
+  "name": "Cloud-Ops: AWS Multi-Account Fleet Monitor",
+  "description": "Centralized dashboard powered by AWS Lambda for monitoring EC2 Spot and On-Demand distribution across child accounts, featuring AI-driven cost optimization.",
   "requestFramePermissions": []
 }

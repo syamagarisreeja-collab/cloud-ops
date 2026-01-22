@@ -1,5 +1,5 @@
 {
-  "name": "cloudops:-aws-spot-&-on-demand-monitor",
+  "name": "cloud-ops:-aws-multi-account-fleet-monitor",
   "private": true,
   "version": "0.0.0",
   "type": "module",

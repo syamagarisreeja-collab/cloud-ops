@@ -11,12 +11,17 @@ export const getAIRecommendations = async (accounts: AWSAccount[]): Promise<stri
   }).join("\n");
 
   const prompt = `
-    As an AWS Cloud Architect and Cost Optimization expert, review the following EC2 fleet distribution:
+    As an AWS Cloud Architect for the "Cloud-Ops" platform, review the following EC2 fleet distribution fetched via our centralized Lambda from multiple child accounts:
+    
     ${accountsSummary}
 
-    Analyze the Spot vs On-Demand ratio. Provide 3 specific, actionable recommendations for saving costs or improving availability. 
-    Focus on instance type families, spot availability, and typical price differences.
-    Keep it professional and concise. Format as a bulleted list.
+    Analyze the Spot vs On-Demand ratio across these accounts. Provide 3 specific, actionable recommendations for saving costs or improving availability using Spot instances. 
+    Focus on instance type families, cross-account optimization, and potential architectural changes.
+    
+    Structure your response clearly with bold headings:
+    1. Multi-Account Posture Summary
+    2. Recommendations (with expected % savings)
+    3. Spot Interruption Risk Assessment
   `;
 
   try {
